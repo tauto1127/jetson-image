@@ -14,10 +14,10 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          # Ubuntu 24.04 + L4T 32 (Nano family)
+          # Ubuntu 24.04 + L4T 32 (revision 100)
           - ubuntu: "24.04"
             board: "jetson-nano"
-            revision: "200"
+            revision: "100"
             l4t_version: "32"
             l4t_bsp: ${L4T32_BSP}
 
