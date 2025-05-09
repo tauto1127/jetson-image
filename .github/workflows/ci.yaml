@@ -14,60 +14,12 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          # Ubuntu 22.04 + L4T 32 (Nano family)
-          - ubuntu: "22.04"
-            board: "jetson-nano"
-            revision: "300"
-            l4t_version: "32"
-            l4t_bsp: ${L4T32_BSP}
-          - ubuntu: "22.04"
+          # Ubuntu 24.04 + L4T 32 (Nano family)
+          - ubuntu: "24.04"
             board: "jetson-nano"
             revision: "200"
             l4t_version: "32"
             l4t_bsp: ${L4T32_BSP}
-          - ubuntu: "22.04"
-            board: "jetson-nano"
-            revision: "100"
-            l4t_version: "32"
-            l4t_bsp: ${L4T32_BSP}
-          - ubuntu: "22.04"
-            board: "jetson-nano-2gb"
-            l4t_version: "32"
-            l4t_bsp: ${L4T32_BSP}
-
-          # Ubuntu 24.04 + L4T 36 (Orin family)
-          - ubuntu: "24.04"
-            board: "jetson-orin-nano"
-            device: "SD"
-            l4t_version: "36"
-            l4t_bsp: ${L4T36_BSP}
-          - ubuntu: "24.04"
-            board: "jetson-orin-nano"
-            device: "USB"
-            l4t_version: "36"
-            l4t_bsp: ${L4T36_BSP}
-
-          # Ubuntu 22.04 + L4T 35 (Xavier family)
-          - ubuntu: "22.04"
-            board: "jetson-agx-xavier"
-            device: "SD"
-            l4t_version: "35"
-            l4t_bsp: ${L4T35_BSP}
-          - ubuntu: "22.04"
-            board: "jetson-agx-xavier"
-            device: "USB"
-            l4t_version: "35"
-            l4t_bsp: ${L4T35_BSP}
-          - ubuntu: "22.04"
-            board: "jetson-xavier-nx"
-            device: "SD"
-            l4t_version: "35"
-            l4t_bsp: ${L4T35_BSP}
-          - ubuntu: "22.04"
-            board: "jetson-xavier-nx"
-            device: "USB"
-            l4t_version: "35"
-            l4t_bsp: ${L4T35_BSP}
 
     permissions:
       contents: write
